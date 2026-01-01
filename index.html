@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Marlay CCTV Indramayu | Jual & Service CCTV</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+body{
+    background:#f4f6f8;
+    color:#333;
+}
+a{ text-decoration:none; }
+
+/* NAVBAR */
+.navbar{
+    background:#fff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 8%;
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+}
+.navbar h2{
+    color:#0a4ea3;
+}
+.navbar ul{
+    display:flex;
+    gap:25px;
+    list-style:none;
+}
+.navbar ul li a{
+    color:#333;
+    font-weight:500;
+}
+.btn{
+    background:#0a4ea3;
+    color:#fff;
+    padding:10px 18px;
+    border-radius:6px;
+}
+
+/* HERO */
+.hero{
+    background:linear-gradient(rgba(10,78,163,.8),rgba(10,78,163,.8)),
+    url('https://images.unsplash.com/photo-1581091870627-3c8e5fba89a3') center/cover;
+    color:#fff;
+    padding:90px 8%;
+    display:grid;
+    grid-template-columns:1fr;
+}
+.hero h1{
+    font-size:42px;
+    margin-bottom:10px;
+}
+.hero p{
+    font-size:18px;
+    margin-bottom:25px;
+}
+.hero .actions a{
+    margin-right:15px;
+}
+
+/* INFO BOX */
+.info{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    padding:40px 8%;
+    margin-top:-50px;
+}
+.card{
+    background:#fff;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+.card h3{
+    margin-bottom:10px;
+    color:#0a4ea3;
+}
+
+/* PRODUK */
+.section{
+    padding:60px 8%;
+    text-align:center;
+}
+.section h2{
+    font-size:32px;
+    margin-bottom:10px;
+}
+.section p{
+    color:#666;
+    margin-bottom:40px;
+}
+.products{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+.product{
+    background:#fff;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 4px 15px rgba(0,0,0,.07);
+}
+.product img{
+    width:100%;
+    height:180px;
+    object-fit:contain;
+}
+.product h4{
+    margin:15px 0 5px;
+}
+.product span{
+    color:#0a4ea3;
+    font-weight:bold;
+}
+
+/* LAYANAN */
+.services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+/* KONTAK */
+.contact{
+    background:#fff;
+    padding:60px 8%;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+}
+.contact h3{
+    margin-bottom:10px;
+}
+form input, form textarea{
+    width:100%;
+    padding:12px;
+    margin-bottom:12px;
+    border-radius:6px;
+    border:1px solid #ccc;
+}
+form button{
+    background:#0a4ea3;
+    color:#fff;
+    border:none;
+    padding:12px;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+/* FOOTER */
+footer{
+    background:#0a4ea3;
+    color:#fff;
+    text-align:center;
+    padding:20px;
+}
+
+@media(max-width:768px){
+    .contact{
+        grid-template-columns:1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <h2>Marlay CCTV Indramayu</h2>
+    <ul>
+        <li><a href="#">Beranda</a></li>
+        <li><a href="#">Produk</a></li>
+        <li><a href="#">Layanan</a></li>
+        <li><a href="#">Kontak</a></li>
+    </ul>
+    <a href="#" class="btn">Dapatkan Penawaran</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+    <h1>Solusi Terbaik<br>Untuk Keamanan Anda</h1>
+    <p>Jual, Pasang & Service CCTV Profesional</p>
+    <div class="actions">
+        <a href="#" class="btn">Lihat Produk</a>
+        <a href="#" class="btn" style="background:#fff;color:#0a4ea3;">Hubungi Kami</a>
+    </div>
+</section>
+
+<!-- INFO -->
+<section class="info">
+    <div class="card">
+        <h3>Jual CCTV Berkualitas</h3>
+        <p>Produk original dengan kualitas terbaik.</p>
+    </div>
+    <div class="card">
+        <h3>Instalasi Profesional</h3>
+        <p>Dikerjakan teknisi berpengalaman.</p>
+    </div>
+    <div class="card">
+        <h3>Servis & Perawatan</h3>
+        <p>Perawatan rutin & perbaikan cepat.</p>
+    </div>
+</section>
+
+<!-- PRODUK -->
+<section class="section">
+    <h2>Produk CCTV Unggulan</h2>
+    <p>Kamera keamanan terbaik untuk kebutuhan Anda</p>
+
+    <div class="products">
+        <div class="product">
+            <img src="cctv3.jpg">
+            <h4>EZVIZ H9C Audio</h4>
+            <span>Harga Serta Pemasangan Rp 1.900.000</span>
+        </div>
+        <div class="product">
+            <img src="cctv1.jpg">
+            <h4>EZVIZ H8C Audio</h4>
+            <span>Harga Serta Pemasangan Rp 1.500.000</span>
+        </div>
+        <div class="product">
+            <img src="cctv2.jpg">
+            <h4>EZVIZ C6N Audio</h4>
+            <span>Harga Serta Pemasangan Rp 850.000</span>
+        </div>
+    </div>
+</section>
+
+<!-- LAYANAN -->
+<section class="section">
+    <h2>Layanan Kami</h2>
+    <p>Layanan lengkap untuk keamanan Anda</p>
+
+    <div class="services">
+        <div class="card">
+            <h3>Pemasangan CCTV</h3>
+            <p>Instalasi rapi dan aman.</p>
+        </div>
+        <div class="card">
+            <h3>Perawatan & Service</h3>
+            <p>Maintenance berkala & perbaikan.</p>
+        </div>
+        <div class="card">
+            <h3>Monitoring & Support</h3>
+            <p>Dukungan teknis cepat.</p>
+        </div>
+    </div>
+</section>
+
+<!-- KONTAK -->
+<section class="contact">
+    <div>
+        <h3>Hubungi Kami Sekarang</h3>
+        <p>Whathsap:0897-0099-710
+        </p>Gmail:marlaycctv@gmail.com
+        </p>Lokasi:Singajaya, Kabupaten Indramayu, Jawa Barat
+    </div>
+    <form>
+        <input type="text" placeholder="Marlay CCTV Indramayu">
+        <input type="email" placeholder="marlaycctv@gmail.com">
+        <input type="text" placeholder="0897-0099-710">
+        <textarea rows="4" placeholder="Hubungi Kenomor Dan Email Di Atas"></textarea>
+        <button>Kirim</button>
+    </form>
+</section>
+
+<footer>
+    © 2026 Marlay CCTV Indramayu | Keamanan & Pengawasan Profesional
+</footer>
+
+</body>
+</html>
