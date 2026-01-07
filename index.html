@@ -327,6 +327,97 @@ Wa. 08970734222.</p>
 <footer>
     © 2026 Marlay CCTV Indramayu | Keamanan & Pengawasan Profesional
 </footer>
+<!-- FLOATING WHATSAPP CCTV MARLAY -->
+<a href="#" class="wa-float" onclick="bookingWA()">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+  <span>Konsultasi CCTV</span>
+</a>
 
+<script>
+/* =========================
+   AUTO WHATSAPP CCTV MARLAY
+   ========================= */
+
+let currentProduct = "CCTV MARLAY";
+
+// DIPANGGIL SAAT KLIK DETAIL PRODUK (JIKA ADA)
+function openDetail(nama){
+  currentProduct = nama;
+
+  document.getElementById("propName").innerText = nama;
+  document.getElementById("modal").style.display = "flex";
+
+  let pesan = `Halo Admin CCTV MARLAY 👋
+Saya ingin konsultasi / membeli CCTV.
+
+Produk/Layanan: ${nama}
+
+Mohon info detail harga, spesifikasi, dan pemasangan.
+Terima kasih.`;
+
+  document.getElementById("waBtn").href =
+    "https://wa.me/628970099710?text=" + encodeURIComponent(pesan);
+}
+
+// TOMBOL FLOATING WHATSAPP
+function bookingWA(){
+  let pesan = `Halo Admin CCTV MARLAY 👋
+Saya ingin konsultasi / beli CCTV.
+
+Mohon info mengenai:
+- Paket CCTV
+- Harga
+- Pemasangan
+
+Terima kasih.`;
+
+  window.open(
+    "https://wa.me/628970099710?text=" + encodeURIComponent(pesan),
+    "_blank"
+  );
+}
+
+// TUTUP MODAL
+function closeDetail(){
+  document.getElementById("modal").style.display = "none";
+}
+</script>
+
+<style>
+/* =========================
+   FLOATING WHATSAPP STYLE
+   ========================= */
+.wa-float{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: #fff;
+  padding: 12px 18px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+  z-index: 9999;
+  transition: 0.3s;
+}
+
+.wa-float img{
+  width: 26px;
+}
+
+.wa-float:hover{
+  transform: scale(1.05);
+}
+
+@media(max-width:600px){
+  .wa-float span{
+    display: none;
+  }
+}
+</style>
 </body>
 </html>
